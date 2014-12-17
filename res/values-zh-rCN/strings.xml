@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_defined_name">U快递</string>
+    <string name="mine">我的订单</string>
+    <string name="inquire">订单查询</string>
+    <string name="expressage">快递查看</string>
+    <string name="please">请输入快递单号</string>
+    <string name="button_inquire">查询</string>
+    <string name="dialog_title">提示</string>
+    <string name="choose_com">忘了选快递公司哦！</string>
+    <string name="tab02_com">知道了</string>
+    <string name="right_num">要输入正确的订单号哦！</string>
+    <string name="tab1_com">请选择公司</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+    	android:layout_height="160dp"
+    	android:layout_marginTop="80dp">
+    
+        <LinearLayout
+            android:id="@+id/search" 
+            android:layout_width="300dp"
+    		android:layout_height="70dp"
+    		android:background="@drawable/edittext_search"
+    		android:layout_centerInParent="true"
+    		android:layout_alignParentTop="true">
+        
+		    <EditText 
+		        android:id="@+id/number1"
+		        android:hint="@string/please"
+		        android:textColorHint="#c1c1c1"
+		        android:textStyle="bold"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="65dp"
+				android:layout_marginTop="20dp"
+				android:background="@null"/>  
+		</LinearLayout>
+			
+        <RelativeLayout
+            android:id="@+id/spinner_gv" 
+            android:layout_width="290dp"
+    		android:layout_height="70dp"
+    		android:background="@drawable/q_03"
+            android:layout_below="@+id/search"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="30dp">
+        
+             
+		    <Spinner 
+		        android:id="@+id/com"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:prompt="@string/tab1_com"
+		        android:spinnerMode="dialog"
+		        android:layout_marginLeft="60dp"
+		        android:background="@null">
+			</Spinner>  
+			
+			<!-- 
+			<TextView 
+			    android:id="@+id/com"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="@string/tab1_com"
+		        android:layout_marginLeft="60dp"
+		        android:gravity="center_vertical"
+		        android:textSize="28px"/>  -->
+	    
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+	    
+    <Button 
+        android:id="@+id/look"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/all"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_fragment"
+        android:layout_centerInParent="true"/>
+    
+</RelativeLayout>

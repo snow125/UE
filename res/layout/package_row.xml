@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/back"
+        android:tag="back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee"
+        android:gravity="right">
+        <Button 
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#FF0000"
+            android:layout_alignParentRight="true"
+            android:text="刪除"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#00ff00"
+        android:tag="front" >
+
+     
+	    <TextView 
+	        android:id="@+id/com"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"/>
+	    
+	    <TextView 
+	        android:id="@+id/id"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/com"/>
+	    
+	    <TextView 
+	        android:id="@+id/state"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_toRightOf="@+id/id"/>
+      
+    
+    </RelativeLayout>
+
+</FrameLayout>
