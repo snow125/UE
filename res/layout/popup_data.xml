@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/card_box_bg">
+    
+    <TextView 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="揽投员"
+    	android:textSize="13sp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="#000000"/>
+    
+    <TextView 
+        android:layout_marginLeft="10dp"
+        android:id="@+id/people_name"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="揽投员"
+    	android:textSize="16sp"/>
+    
+    <TextView 
+        android:layout_marginLeft="10dp"
+        android:id="@+id/people_tel"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="029-88631163"
+    	android:textSize="14sp"/>
+    
+    <RelativeLayout 
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+		
+	    <ImageView 
+	        android:id="@+id/tel_call"
+	        android:layout_width="40dp"
+	    	android:layout_height="40dp"
+	    	android:background="@drawable/d02_11"/>
+	    
+	    <ImageView 
+	        android:id="@+id/tel_add"
+	        android:layout_width="40dp"
+	    	android:layout_height="40dp"
+	    	android:layout_toRightOf="@+id/tel_call"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_marginRight="10dp"
+	    	android:background="@drawable/d02_15"/>
+    
+    </RelativeLayout>
+    
+</LinearLayout>

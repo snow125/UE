@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    tools:context="com.yhd.avtivity.MainActivity" >
+
+     <LinearLayout
+         android:id="@+id/button"
+         android:layout_width="match_parent"
+         android:layout_height="56dp"
+         android:orientation="horizontal"
+         android:windowSoftInputMode="adjustPan|stateVisible"
+         android:layout_alignParentBottom="true">
+          
+		<ImageView 
+		    android:id="@+id/button1"
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/search_t"
+			android:layout_weight="1"/>
+   
+		<ImageView 
+		    android:id="@+id/button2"
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/mine_t"
+			android:layout_weight="1"/>
+    
+		<ImageView 
+		    android:id="@+id/button3"
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/com_t"
+			android:layout_weight="1"/>
+    
+    </LinearLayout>
+    
+     
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
